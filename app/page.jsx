@@ -35,7 +35,7 @@ export default function Home() {
         <Image width={100} height={250} src={imageUrl} alt="thumbnail" />
         <div className="flex flex-col gap-5">
           <h2>{title}</h2>
-          {author.map(a => <h3>{a.name}</h3>)}
+          {author.map(a => <h3 key={a.name}>{a.name}</h3>)}
         </div>
       </div> ) : (null)}
     </main>
